@@ -70,17 +70,17 @@ In this step we simultaneously evaluate:
 Models' prediction accuracy were evaluated using two metrics were used (root mean square error and an equivalent of R², the model efficiency) through two cross-validation procedure unsuring good model transferability in time and in space. 
 
 This is performed in the:
-- **03_Models_prediction.R** script; the partial dependence for each predictor included in the models are produced in the **03_Models_pdp.R** script;
-- **03_Models_prediction.R** script is used to perform the cross-validation based on sites location. See more details in the Supplementary data of the paper. 
+- **03_1_Models_prediction.R** script; the partial dependence for each predictor included in the models are produced in the **03_4_Models_pdp.R** script;
+- **03_2_Models_prediction_geo_years_cross_validation.R** script is used to perform the cross-validation based on sites' location and years. See more details in the Supplementary data of the paper. 
 
 ## Step 4: Sensitivity analysis 
 The models development and comparison was also performed at the scale of the US and then at the scale of Brazil using the **04_Models_application_climate_change.R** script.  
 
 ## Step 5: Figures production and sensitivity analyses 
 These scripts listed below produce the figures and supplementary figures of the paper: 
-- **04_Figures.R**
-- **04_Figure_reconstruction_variables.R**, **04_Figure_reconstruction_variables_table.R**, and **04_Figure_reconstruction_variables_fplsr.R**: produce the data behing the Figure 3 of the paper, i.e., how perform the different reduction dimension techniques to re-estimate the initial data.
-- **04_Supp_Figures.R**
+- **05_Figures.R**
+- **05_Figure_reconstruction_variables.R**, **05_Figure_reconstruction_variables_table.R**, and **05_Figure_reconstruction_variables_fplsr.R**: produce the data behing the Figure 3 of the paper, i.e., how perform the different reduction dimension techniques to re-estimate the initial data.
+- **05_Supp_Figures.R**: supplementary figures
 
 
 ## Authors: 
